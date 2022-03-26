@@ -122,12 +122,12 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path5 = Path();
-    path5.moveTo(size.width*0.4995667,size.height*0.5686429);
-    path5.quadraticBezierTo(size.width*0.5402833,size.height*0.7929714,size.width*0.6623167,size.height*0.8262571);
-    path5.quadraticBezierTo(size.width*0.8015833,size.height*0.7916143,size.width*0.8336083,size.height*0.5998571);
+    Path paintBodyPath = Path();
+    paintBodyPath.moveTo(size.width*0.4995667,size.height*0.5686429);
+    paintBodyPath.quadraticBezierTo(size.width*0.5402833,size.height*0.7929714,size.width*0.6623167,size.height*0.8262571);
+    paintBodyPath.quadraticBezierTo(size.width*0.8015833,size.height*0.7916143,size.width*0.8336083,size.height*0.5998571);
 
-    canvas.drawPath(path5, paintBrush);
+    canvas.drawPath(paintBodyPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -136,12 +136,12 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path6 = Path();
-    path6.moveTo(size.width*0.4995667,size.height*0.5686429);
-    path6.quadraticBezierTo(size.width*0.5402833,size.height*0.7929714,size.width*0.6623167,size.height*0.8262571);
-    path6.quadraticBezierTo(size.width*0.8015833,size.height*0.7916143,size.width*0.8336083,size.height*0.5998571);
+    Path boatBodyBorderPath = Path();
+    boatBodyBorderPath.moveTo(size.width*0.4995667,size.height*0.5686429);
+    boatBodyBorderPath.quadraticBezierTo(size.width*0.5402833,size.height*0.7929714,size.width*0.6623167,size.height*0.8262571);
+    boatBodyBorderPath.quadraticBezierTo(size.width*0.8015833,size.height*0.7916143,size.width*0.8336083,size.height*0.5998571);
 
-    canvas.drawPath(path6, paintBrush);
+    canvas.drawPath(boatBodyBorderPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -375,15 +375,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path20 = Path();
-    path20.moveTo(size.width*0.4905833,size.height*0.5703429);
-    path20.cubicTo(size.width*0.6486750,size.height*0.6319286,size.width*0.7282583,size.height*0.6473143,size.width*0.8363417,size.height*0.5985143);
-    path20.cubicTo(size.width*0.8527000,size.height*0.5883857,size.width*0.8480250,size.height*0.5563714,size.width*0.8349833,size.height*0.5563857);
-    path20.quadraticBezierTo(size.width*0.7408583,size.height*0.6136857,size.width*0.4852083,size.height*0.5243714);
-    path20.quadraticBezierTo(size.width*0.4806167,size.height*0.5420714,size.width*0.4905833,size.height*0.5703429);
-    path20.close();
+    Path boatBodyTopPath = Path();
+    boatBodyTopPath.moveTo(size.width*0.4905833,size.height*0.5703429);
+    boatBodyTopPath.cubicTo(size.width*0.6486750,size.height*0.6319286,size.width*0.7282583,size.height*0.6473143,size.width*0.8363417,size.height*0.5985143);
+    boatBodyTopPath.cubicTo(size.width*0.8527000,size.height*0.5883857,size.width*0.8480250,size.height*0.5563714,size.width*0.8349833,size.height*0.5563857);
+    boatBodyTopPath.quadraticBezierTo(size.width*0.7408583,size.height*0.6136857,size.width*0.4852083,size.height*0.5243714);
+    boatBodyTopPath.quadraticBezierTo(size.width*0.4806167,size.height*0.5420714,size.width*0.4905833,size.height*0.5703429);
+    boatBodyTopPath.close();
 
-    canvas.drawPath(path20, paintBrush);
+    canvas.drawPath(boatBodyTopPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -392,16 +392,16 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path21 = Path();
-    path21.moveTo(size.width*0.5068250,size.height*0.5757714);
-    path21.quadraticBezierTo(size.width*0.7069750,size.height*0.6390714,size.width*0.7841250,size.height*0.6010429);
-    path21.quadraticBezierTo(size.width*0.7943250,size.height*0.5887000,size.width*0.7833333,size.height*0.5770286);
-    path21.lineTo(size.width*0.8307083,size.height*0.5564143);
-    path21.quadraticBezierTo(size.width*0.8612333,size.height*0.5627286,size.width*0.8378833,size.height*0.5975571);
-    path21.quadraticBezierTo(size.width*0.7227417,size.height*0.6651571,size.width*0.5068250,size.height*0.5757714);
-    path21.close();
+    Path boatBodyTopShade = Path();
+    boatBodyTopShade.moveTo(size.width*0.5068250,size.height*0.5757714);
+    boatBodyTopShade.quadraticBezierTo(size.width*0.7069750,size.height*0.6390714,size.width*0.7841250,size.height*0.6010429);
+    boatBodyTopShade.quadraticBezierTo(size.width*0.7943250,size.height*0.5887000,size.width*0.7833333,size.height*0.5770286);
+    boatBodyTopShade.lineTo(size.width*0.8307083,size.height*0.5564143);
+    boatBodyTopShade.quadraticBezierTo(size.width*0.8612333,size.height*0.5627286,size.width*0.8378833,size.height*0.5975571);
+    boatBodyTopShade.quadraticBezierTo(size.width*0.7227417,size.height*0.6651571,size.width*0.5068250,size.height*0.5757714);
+    boatBodyTopShade.close();
 
-    canvas.drawPath(path21, paintBrush);
+    canvas.drawPath(boatBodyTopShade, paintBrush);
 
 
     paintBrush = Paint()
@@ -410,15 +410,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path22 = Path();
-    path22.moveTo(size.width*0.4905833,size.height*0.5703429);
-    path22.cubicTo(size.width*0.6486750,size.height*0.6319286,size.width*0.7282583,size.height*0.6473143,size.width*0.8363417,size.height*0.5985143);
-    path22.cubicTo(size.width*0.8527000,size.height*0.5883857,size.width*0.8480250,size.height*0.5563714,size.width*0.8349833,size.height*0.5563857);
-    path22.quadraticBezierTo(size.width*0.7408583,size.height*0.6136857,size.width*0.4852083,size.height*0.5243714);
-    path22.quadraticBezierTo(size.width*0.4806167,size.height*0.5420714,size.width*0.4905833,size.height*0.5703429);
-    path22.close();
+    Path boatBodyTopBorder = Path();
+    boatBodyTopBorder.moveTo(size.width*0.4905833,size.height*0.5703429);
+    boatBodyTopBorder.cubicTo(size.width*0.6486750,size.height*0.6319286,size.width*0.7282583,size.height*0.6473143,size.width*0.8363417,size.height*0.5985143);
+    boatBodyTopBorder.cubicTo(size.width*0.8527000,size.height*0.5883857,size.width*0.8480250,size.height*0.5563714,size.width*0.8349833,size.height*0.5563857);
+    boatBodyTopBorder.quadraticBezierTo(size.width*0.7408583,size.height*0.6136857,size.width*0.4852083,size.height*0.5243714);
+    boatBodyTopBorder.quadraticBezierTo(size.width*0.4806167,size.height*0.5420714,size.width*0.4905833,size.height*0.5703429);
+    boatBodyTopBorder.close();
 
-    canvas.drawPath(path22, paintBrush);
+    canvas.drawPath(boatBodyTopBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -491,14 +491,14 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path27 = Path();
-    path27.moveTo(size.width*0.7150000,size.height*0.3728571);
-    path27.quadraticBezierTo(size.width*0.7402417,size.height*0.3568143,size.width*0.7505417,size.height*0.3737286);
-    path27.cubicTo(size.width*0.7552750,size.height*0.3821000,size.width*0.7501354,size.height*0.4030750,size.width*0.7500000,size.height*0.4128571);
-    path27.quadraticBezierTo(size.width*0.7414583,size.height*0.4128571,size.width*0.7158333,size.height*0.4128571);
-    path27.lineTo(size.width*0.7157917,size.height*0.4396000);
+    Path flagClothPath = Path();
+    flagClothPath.moveTo(size.width*0.7150000,size.height*0.3728571);
+    flagClothPath.quadraticBezierTo(size.width*0.7402417,size.height*0.3568143,size.width*0.7505417,size.height*0.3737286);
+    flagClothPath.cubicTo(size.width*0.7552750,size.height*0.3821000,size.width*0.7501354,size.height*0.4030750,size.width*0.7500000,size.height*0.4128571);
+    flagClothPath.quadraticBezierTo(size.width*0.7414583,size.height*0.4128571,size.width*0.7158333,size.height*0.4128571);
+    flagClothPath.lineTo(size.width*0.7157917,size.height*0.4396000);
 
-    canvas.drawPath(path27, paintBrush);
+    canvas.drawPath(flagClothPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -507,14 +507,14 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path28 = Path();
-    path28.moveTo(size.width*0.7150000,size.height*0.3728571);
-    path28.quadraticBezierTo(size.width*0.7402417,size.height*0.3568143,size.width*0.7505417,size.height*0.3737286);
-    path28.cubicTo(size.width*0.7552750,size.height*0.3821000,size.width*0.7501354,size.height*0.4030750,size.width*0.7500000,size.height*0.4128571);
-    path28.quadraticBezierTo(size.width*0.7414583,size.height*0.4128571,size.width*0.7158333,size.height*0.4128571);
-    path28.lineTo(size.width*0.7157917,size.height*0.4396000);
+    Path flagClothBorderPath = Path();
+    flagClothBorderPath.moveTo(size.width*0.7150000,size.height*0.3728571);
+    flagClothBorderPath.quadraticBezierTo(size.width*0.7402417,size.height*0.3568143,size.width*0.7505417,size.height*0.3737286);
+    flagClothBorderPath.cubicTo(size.width*0.7552750,size.height*0.3821000,size.width*0.7501354,size.height*0.4030750,size.width*0.7500000,size.height*0.4128571);
+    flagClothBorderPath.quadraticBezierTo(size.width*0.7414583,size.height*0.4128571,size.width*0.7158333,size.height*0.4128571);
+    flagClothBorderPath.lineTo(size.width*0.7157917,size.height*0.4396000);
 
-    canvas.drawPath(path28, paintBrush);
+    canvas.drawPath(flagClothBorderPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -523,15 +523,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path29 = Path();
-    path29.moveTo(size.width*0.6386833,size.height*0.4961000);
-    path29.cubicTo(size.width*0.6435917,size.height*0.4961000,size.width*0.6515500,size.height*0.5010571,size.width*0.6515500,size.height*0.5181429);
-    path29.cubicTo(size.width*0.6515500,size.height*0.5265571,size.width*0.6484500,size.height*0.5402000,size.width*0.6386833,size.height*0.5402000);
-    path29.cubicTo(size.width*0.6337833,size.height*0.5402000,size.width*0.6258250,size.height*0.5348857,size.width*0.6258250,size.height*0.5181429);
-    path29.cubicTo(size.width*0.6258250,size.height*0.5097429,size.width*0.6289250,size.height*0.4961000,size.width*0.6386833,size.height*0.4961000);
-    path29.close();
+    Path firstWindowBackgroundPath = Path();
+    firstWindowBackgroundPath.moveTo(size.width*0.6386833,size.height*0.4961000);
+    firstWindowBackgroundPath.cubicTo(size.width*0.6435917,size.height*0.4961000,size.width*0.6515500,size.height*0.5010571,size.width*0.6515500,size.height*0.5181429);
+    firstWindowBackgroundPath.cubicTo(size.width*0.6515500,size.height*0.5265571,size.width*0.6484500,size.height*0.5402000,size.width*0.6386833,size.height*0.5402000);
+    firstWindowBackgroundPath.cubicTo(size.width*0.6337833,size.height*0.5402000,size.width*0.6258250,size.height*0.5348857,size.width*0.6258250,size.height*0.5181429);
+    firstWindowBackgroundPath.cubicTo(size.width*0.6258250,size.height*0.5097429,size.width*0.6289250,size.height*0.4961000,size.width*0.6386833,size.height*0.4961000);
+    firstWindowBackgroundPath.close();
 
-    canvas.drawPath(path29, paintBrush);
+    canvas.drawPath(firstWindowBackgroundPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -540,15 +540,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path30 = Path();
-    path30.moveTo(size.width*0.6386833,size.height*0.4961000);
-    path30.cubicTo(size.width*0.6435917,size.height*0.4961000,size.width*0.6515500,size.height*0.5010571,size.width*0.6515500,size.height*0.5181429);
-    path30.cubicTo(size.width*0.6515500,size.height*0.5265571,size.width*0.6484500,size.height*0.5402000,size.width*0.6386833,size.height*0.5402000);
-    path30.cubicTo(size.width*0.6337833,size.height*0.5402000,size.width*0.6258250,size.height*0.5348857,size.width*0.6258250,size.height*0.5181429);
-    path30.cubicTo(size.width*0.6258250,size.height*0.5097429,size.width*0.6289250,size.height*0.4961000,size.width*0.6386833,size.height*0.4961000);
-    path30.close();
+    Path firstWindowBackgroundBorder = Path();
+    firstWindowBackgroundBorder.moveTo(size.width*0.6386833,size.height*0.4961000);
+    firstWindowBackgroundBorder.cubicTo(size.width*0.6435917,size.height*0.4961000,size.width*0.6515500,size.height*0.5010571,size.width*0.6515500,size.height*0.5181429);
+    firstWindowBackgroundBorder.cubicTo(size.width*0.6515500,size.height*0.5265571,size.width*0.6484500,size.height*0.5402000,size.width*0.6386833,size.height*0.5402000);
+    firstWindowBackgroundBorder.cubicTo(size.width*0.6337833,size.height*0.5402000,size.width*0.6258250,size.height*0.5348857,size.width*0.6258250,size.height*0.5181429);
+    firstWindowBackgroundBorder.cubicTo(size.width*0.6258250,size.height*0.5097429,size.width*0.6289250,size.height*0.4961000,size.width*0.6386833,size.height*0.4961000);
+    firstWindowBackgroundBorder.close();
 
-    canvas.drawPath(path30, paintBrush);
+    canvas.drawPath(firstWindowBackgroundBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -557,15 +557,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path31 = Path();
-    path31.moveTo(size.width*0.6807333,size.height*0.4972143);
-    path31.cubicTo(size.width*0.6857250,size.height*0.4972143,size.width*0.6936000,size.height*0.5021714,size.width*0.6936000,size.height*0.5192571);
-    path31.cubicTo(size.width*0.6936000,size.height*0.5276714,size.width*0.6905000,size.height*0.5413143,size.width*0.6807333,size.height*0.5413143);
-    path31.cubicTo(size.width*0.6758333,size.height*0.5413143,size.width*0.6678750,size.height*0.5360000,size.width*0.6678750,size.height*0.5192571);
-    path31.cubicTo(size.width*0.6678750,size.height*0.5108571,size.width*0.6710583,size.height*0.4972143,size.width*0.6807333,size.height*0.4972143);
-    path31.close();
+    Path secondWindowBackgroundPath = Path();
+    secondWindowBackgroundPath.moveTo(size.width*0.6807333,size.height*0.4972143);
+    secondWindowBackgroundPath.cubicTo(size.width*0.6857250,size.height*0.4972143,size.width*0.6936000,size.height*0.5021714,size.width*0.6936000,size.height*0.5192571);
+    secondWindowBackgroundPath.cubicTo(size.width*0.6936000,size.height*0.5276714,size.width*0.6905000,size.height*0.5413143,size.width*0.6807333,size.height*0.5413143);
+    secondWindowBackgroundPath.cubicTo(size.width*0.6758333,size.height*0.5413143,size.width*0.6678750,size.height*0.5360000,size.width*0.6678750,size.height*0.5192571);
+    secondWindowBackgroundPath.cubicTo(size.width*0.6678750,size.height*0.5108571,size.width*0.6710583,size.height*0.4972143,size.width*0.6807333,size.height*0.4972143);
+    secondWindowBackgroundPath.close();
 
-    canvas.drawPath(path31, paintBrush);
+    canvas.drawPath(secondWindowBackgroundPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -574,15 +574,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path32 = Path();
-    path32.moveTo(size.width*0.6807333,size.height*0.4972143);
-    path32.cubicTo(size.width*0.6857250,size.height*0.4972143,size.width*0.6936000,size.height*0.5021714,size.width*0.6936000,size.height*0.5192571);
-    path32.cubicTo(size.width*0.6936000,size.height*0.5276714,size.width*0.6905000,size.height*0.5413143,size.width*0.6807333,size.height*0.5413143);
-    path32.cubicTo(size.width*0.6758333,size.height*0.5413143,size.width*0.6678750,size.height*0.5360000,size.width*0.6678750,size.height*0.5192571);
-    path32.cubicTo(size.width*0.6678750,size.height*0.5108571,size.width*0.6710583,size.height*0.4972143,size.width*0.6807333,size.height*0.4972143);
-    path32.close();
+    Path secondWindowBackgroundBorder = Path();
+    secondWindowBackgroundBorder.moveTo(size.width*0.6807333,size.height*0.4972143);
+    secondWindowBackgroundBorder.cubicTo(size.width*0.6857250,size.height*0.4972143,size.width*0.6936000,size.height*0.5021714,size.width*0.6936000,size.height*0.5192571);
+    secondWindowBackgroundBorder.cubicTo(size.width*0.6936000,size.height*0.5276714,size.width*0.6905000,size.height*0.5413143,size.width*0.6807333,size.height*0.5413143);
+    secondWindowBackgroundBorder.cubicTo(size.width*0.6758333,size.height*0.5413143,size.width*0.6678750,size.height*0.5360000,size.width*0.6678750,size.height*0.5192571);
+    secondWindowBackgroundBorder.cubicTo(size.width*0.6678750,size.height*0.5108571,size.width*0.6710583,size.height*0.4972143,size.width*0.6807333,size.height*0.4972143);
+    secondWindowBackgroundBorder.close();
 
-    canvas.drawPath(path32, paintBrush);
+    canvas.drawPath(secondWindowBackgroundBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -591,15 +591,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path33 = Path();
-    path33.moveTo(size.width*0.7241833,size.height*0.4973000);
-    path33.cubicTo(size.width*0.7291750,size.height*0.4973000,size.width*0.7370500,size.height*0.5022571,size.width*0.7370500,size.height*0.5193429);
-    path33.cubicTo(size.width*0.7370500,size.height*0.5277571,size.width*0.7339500,size.height*0.5414000,size.width*0.7241833,size.height*0.5414000);
-    path33.cubicTo(size.width*0.7192833,size.height*0.5414000,size.width*0.7113250,size.height*0.5360857,size.width*0.7113250,size.height*0.5193429);
-    path33.cubicTo(size.width*0.7113250,size.height*0.5109429,size.width*0.7145083,size.height*0.4973000,size.width*0.7241833,size.height*0.4973000);
-    path33.close();
+    Path thirdWindowBackgroundPath = Path();
+    thirdWindowBackgroundPath.moveTo(size.width*0.7241833,size.height*0.4973000);
+    thirdWindowBackgroundPath.cubicTo(size.width*0.7291750,size.height*0.4973000,size.width*0.7370500,size.height*0.5022571,size.width*0.7370500,size.height*0.5193429);
+    thirdWindowBackgroundPath.cubicTo(size.width*0.7370500,size.height*0.5277571,size.width*0.7339500,size.height*0.5414000,size.width*0.7241833,size.height*0.5414000);
+    thirdWindowBackgroundPath.cubicTo(size.width*0.7192833,size.height*0.5414000,size.width*0.7113250,size.height*0.5360857,size.width*0.7113250,size.height*0.5193429);
+    thirdWindowBackgroundPath.cubicTo(size.width*0.7113250,size.height*0.5109429,size.width*0.7145083,size.height*0.4973000,size.width*0.7241833,size.height*0.4973000);
+    thirdWindowBackgroundPath.close();
 
-    canvas.drawPath(path33, paintBrush);
+    canvas.drawPath(thirdWindowBackgroundPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -608,15 +608,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path34 = Path();
-    path34.moveTo(size.width*0.7241833,size.height*0.4973000);
-    path34.cubicTo(size.width*0.7291750,size.height*0.4973000,size.width*0.7370500,size.height*0.5022571,size.width*0.7370500,size.height*0.5193429);
-    path34.cubicTo(size.width*0.7370500,size.height*0.5277571,size.width*0.7339500,size.height*0.5414000,size.width*0.7241833,size.height*0.5414000);
-    path34.cubicTo(size.width*0.7192833,size.height*0.5414000,size.width*0.7113250,size.height*0.5360857,size.width*0.7113250,size.height*0.5193429);
-    path34.cubicTo(size.width*0.7113250,size.height*0.5109429,size.width*0.7145083,size.height*0.4973000,size.width*0.7241833,size.height*0.4973000);
-    path34.close();
+    Path thirdWindowBackgroundBorderPath = Path();
+    thirdWindowBackgroundBorderPath.moveTo(size.width*0.7241833,size.height*0.4973000);
+    thirdWindowBackgroundBorderPath.cubicTo(size.width*0.7291750,size.height*0.4973000,size.width*0.7370500,size.height*0.5022571,size.width*0.7370500,size.height*0.5193429);
+    thirdWindowBackgroundBorderPath.cubicTo(size.width*0.7370500,size.height*0.5277571,size.width*0.7339500,size.height*0.5414000,size.width*0.7241833,size.height*0.5414000);
+    thirdWindowBackgroundBorderPath.cubicTo(size.width*0.7192833,size.height*0.5414000,size.width*0.7113250,size.height*0.5360857,size.width*0.7113250,size.height*0.5193429);
+    thirdWindowBackgroundBorderPath.cubicTo(size.width*0.7113250,size.height*0.5109429,size.width*0.7145083,size.height*0.4973000,size.width*0.7241833,size.height*0.4973000);
+    thirdWindowBackgroundBorderPath.close();
 
-    canvas.drawPath(path34, paintBrush);
+    canvas.drawPath(thirdWindowBackgroundBorderPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -625,15 +625,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path35 = Path();
-    path35.moveTo(size.width*0.6386917,size.height*0.5032143);
-    path35.cubicTo(size.width*0.6428583,size.height*0.5032143,size.width*0.6471833,size.height*0.5078571,size.width*0.6471833,size.height*0.5177571);
-    path35.cubicTo(size.width*0.6471833,size.height*0.5249000,size.width*0.6442667,size.height*0.5323143,size.width*0.6386917,size.height*0.5323143);
-    path35.cubicTo(size.width*0.6345333,size.height*0.5323143,size.width*0.6302083,size.height*0.5273143,size.width*0.6302083,size.height*0.5177571);
-    path35.cubicTo(size.width*0.6302083,size.height*0.5106286,size.width*0.6330083,size.height*0.5032143,size.width*0.6386917,size.height*0.5032143);
-    path35.close();
+    Path windowOne = Path();
+    windowOne.moveTo(size.width*0.6386917,size.height*0.5032143);
+    windowOne.cubicTo(size.width*0.6428583,size.height*0.5032143,size.width*0.6471833,size.height*0.5078571,size.width*0.6471833,size.height*0.5177571);
+    windowOne.cubicTo(size.width*0.6471833,size.height*0.5249000,size.width*0.6442667,size.height*0.5323143,size.width*0.6386917,size.height*0.5323143);
+    windowOne.cubicTo(size.width*0.6345333,size.height*0.5323143,size.width*0.6302083,size.height*0.5273143,size.width*0.6302083,size.height*0.5177571);
+    windowOne.cubicTo(size.width*0.6302083,size.height*0.5106286,size.width*0.6330083,size.height*0.5032143,size.width*0.6386917,size.height*0.5032143);
+    windowOne.close();
 
-    canvas.drawPath(path35, paintBrush);
+    canvas.drawPath(windowOne, paintBrush);
 
 
     paintBrush = Paint()
@@ -642,15 +642,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path36 = Path();
-    path36.moveTo(size.width*0.6386917,size.height*0.5032143);
-    path36.cubicTo(size.width*0.6428583,size.height*0.5032143,size.width*0.6471833,size.height*0.5078571,size.width*0.6471833,size.height*0.5177571);
-    path36.cubicTo(size.width*0.6471833,size.height*0.5249000,size.width*0.6442667,size.height*0.5323143,size.width*0.6386917,size.height*0.5323143);
-    path36.cubicTo(size.width*0.6345333,size.height*0.5323143,size.width*0.6302083,size.height*0.5273143,size.width*0.6302083,size.height*0.5177571);
-    path36.cubicTo(size.width*0.6302083,size.height*0.5106286,size.width*0.6330083,size.height*0.5032143,size.width*0.6386917,size.height*0.5032143);
-    path36.close();
+    Path windowOneBorder = Path();
+    windowOneBorder.moveTo(size.width*0.6386917,size.height*0.5032143);
+    windowOneBorder.cubicTo(size.width*0.6428583,size.height*0.5032143,size.width*0.6471833,size.height*0.5078571,size.width*0.6471833,size.height*0.5177571);
+    windowOneBorder.cubicTo(size.width*0.6471833,size.height*0.5249000,size.width*0.6442667,size.height*0.5323143,size.width*0.6386917,size.height*0.5323143);
+    windowOneBorder.cubicTo(size.width*0.6345333,size.height*0.5323143,size.width*0.6302083,size.height*0.5273143,size.width*0.6302083,size.height*0.5177571);
+    windowOneBorder.cubicTo(size.width*0.6302083,size.height*0.5106286,size.width*0.6330083,size.height*0.5032143,size.width*0.6386917,size.height*0.5032143);
+    windowOneBorder.close();
 
-    canvas.drawPath(path36, paintBrush);
+    canvas.drawPath(windowOneBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -659,15 +659,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path37 = Path();
-    path37.moveTo(size.width*0.6806750,size.height*0.5041143);
-    path37.cubicTo(size.width*0.6847000,size.height*0.5041143,size.width*0.6891667,size.height*0.5087571,size.width*0.6891667,size.height*0.5186571);
-    path37.cubicTo(size.width*0.6891667,size.height*0.5258000,size.width*0.6862500,size.height*0.5332143,size.width*0.6806750,size.height*0.5332143);
-    path37.cubicTo(size.width*0.6765167,size.height*0.5332143,size.width*0.6721917,size.height*0.5282143,size.width*0.6721917,size.height*0.5186571);
-    path37.cubicTo(size.width*0.6721917,size.height*0.5115286,size.width*0.6748500,size.height*0.5041143,size.width*0.6806750,size.height*0.5041143);
-    path37.close();
+    Path windowTwo = Path();
+    windowTwo.moveTo(size.width*0.6806750,size.height*0.5041143);
+    windowTwo.cubicTo(size.width*0.6847000,size.height*0.5041143,size.width*0.6891667,size.height*0.5087571,size.width*0.6891667,size.height*0.5186571);
+    windowTwo.cubicTo(size.width*0.6891667,size.height*0.5258000,size.width*0.6862500,size.height*0.5332143,size.width*0.6806750,size.height*0.5332143);
+    windowTwo.cubicTo(size.width*0.6765167,size.height*0.5332143,size.width*0.6721917,size.height*0.5282143,size.width*0.6721917,size.height*0.5186571);
+    windowTwo.cubicTo(size.width*0.6721917,size.height*0.5115286,size.width*0.6748500,size.height*0.5041143,size.width*0.6806750,size.height*0.5041143);
+    windowTwo.close();
 
-    canvas.drawPath(path37, paintBrush);
+    canvas.drawPath(windowTwo, paintBrush);
 
 
     paintBrush = Paint()
@@ -676,15 +676,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path38 = Path();
-    path38.moveTo(size.width*0.6806750,size.height*0.5041143);
-    path38.cubicTo(size.width*0.6847000,size.height*0.5041143,size.width*0.6891667,size.height*0.5087571,size.width*0.6891667,size.height*0.5186571);
-    path38.cubicTo(size.width*0.6891667,size.height*0.5258000,size.width*0.6862500,size.height*0.5332143,size.width*0.6806750,size.height*0.5332143);
-    path38.cubicTo(size.width*0.6765167,size.height*0.5332143,size.width*0.6721917,size.height*0.5282143,size.width*0.6721917,size.height*0.5186571);
-    path38.cubicTo(size.width*0.6721917,size.height*0.5115286,size.width*0.6748500,size.height*0.5041143,size.width*0.6806750,size.height*0.5041143);
-    path38.close();
+    Path windowTwoBorder = Path();
+    windowTwoBorder.moveTo(size.width*0.6806750,size.height*0.5041143);
+    windowTwoBorder.cubicTo(size.width*0.6847000,size.height*0.5041143,size.width*0.6891667,size.height*0.5087571,size.width*0.6891667,size.height*0.5186571);
+    windowTwoBorder.cubicTo(size.width*0.6891667,size.height*0.5258000,size.width*0.6862500,size.height*0.5332143,size.width*0.6806750,size.height*0.5332143);
+    windowTwoBorder.cubicTo(size.width*0.6765167,size.height*0.5332143,size.width*0.6721917,size.height*0.5282143,size.width*0.6721917,size.height*0.5186571);
+    windowTwoBorder.cubicTo(size.width*0.6721917,size.height*0.5115286,size.width*0.6748500,size.height*0.5041143,size.width*0.6806750,size.height*0.5041143);
+    windowTwoBorder.close();
 
-    canvas.drawPath(path38, paintBrush);
+    canvas.drawPath(windowTwoBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -693,15 +693,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path39 = Path();
-    path39.moveTo(size.width*0.7240333,size.height*0.5048571);
-    path39.cubicTo(size.width*0.7280583,size.height*0.5048571,size.width*0.7325250,size.height*0.5095000,size.width*0.7325250,size.height*0.5194000);
-    path39.cubicTo(size.width*0.7325250,size.height*0.5265429,size.width*0.7296083,size.height*0.5339571,size.width*0.7240333,size.height*0.5339571);
-    path39.cubicTo(size.width*0.7198750,size.height*0.5339571,size.width*0.7155500,size.height*0.5289571,size.width*0.7155500,size.height*0.5194000);
-    path39.cubicTo(size.width*0.7155500,size.height*0.5122714,size.width*0.7182083,size.height*0.5048571,size.width*0.7240333,size.height*0.5048571);
-    path39.close();
+    Path windowThree = Path();
+    windowThree.moveTo(size.width*0.7240333,size.height*0.5048571);
+    windowThree.cubicTo(size.width*0.7280583,size.height*0.5048571,size.width*0.7325250,size.height*0.5095000,size.width*0.7325250,size.height*0.5194000);
+    windowThree.cubicTo(size.width*0.7325250,size.height*0.5265429,size.width*0.7296083,size.height*0.5339571,size.width*0.7240333,size.height*0.5339571);
+    windowThree.cubicTo(size.width*0.7198750,size.height*0.5339571,size.width*0.7155500,size.height*0.5289571,size.width*0.7155500,size.height*0.5194000);
+    windowThree.cubicTo(size.width*0.7155500,size.height*0.5122714,size.width*0.7182083,size.height*0.5048571,size.width*0.7240333,size.height*0.5048571);
+    windowThree.close();
 
-    canvas.drawPath(path39, paintBrush);
+    canvas.drawPath(windowThree , paintBrush);
 
 
     paintBrush = Paint()
@@ -710,15 +710,15 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path40 = Path();
-    path40.moveTo(size.width*0.7240333,size.height*0.5048571);
-    path40.cubicTo(size.width*0.7280583,size.height*0.5048571,size.width*0.7325250,size.height*0.5095000,size.width*0.7325250,size.height*0.5194000);
-    path40.cubicTo(size.width*0.7325250,size.height*0.5265429,size.width*0.7296083,size.height*0.5339571,size.width*0.7240333,size.height*0.5339571);
-    path40.cubicTo(size.width*0.7198750,size.height*0.5339571,size.width*0.7155500,size.height*0.5289571,size.width*0.7155500,size.height*0.5194000);
-    path40.cubicTo(size.width*0.7155500,size.height*0.5122714,size.width*0.7182083,size.height*0.5048571,size.width*0.7240333,size.height*0.5048571);
-    path40.close();
+    Path widowThreeBorder = Path();
+    widowThreeBorder.moveTo(size.width*0.7240333,size.height*0.5048571);
+    widowThreeBorder.cubicTo(size.width*0.7280583,size.height*0.5048571,size.width*0.7325250,size.height*0.5095000,size.width*0.7325250,size.height*0.5194000);
+    widowThreeBorder.cubicTo(size.width*0.7325250,size.height*0.5265429,size.width*0.7296083,size.height*0.5339571,size.width*0.7240333,size.height*0.5339571);
+    widowThreeBorder.cubicTo(size.width*0.7198750,size.height*0.5339571,size.width*0.7155500,size.height*0.5289571,size.width*0.7155500,size.height*0.5194000);
+    widowThreeBorder.cubicTo(size.width*0.7155500,size.height*0.5122714,size.width*0.7182083,size.height*0.5048571,size.width*0.7240333,size.height*0.5048571);
+    widowThreeBorder.close();
 
-    canvas.drawPath(path40, paintBrush);
+    canvas.drawPath(widowThreeBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -727,17 +727,17 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path42 = Path();
-    path42.moveTo(size.width*0.1475333,size.height*0.2747429);
-    path42.quadraticBezierTo(size.width*0.1394333,size.height*0.2087714,size.width*0.1833250,size.height*0.2372571);
-    path42.quadraticBezierTo(size.width*0.1956250,size.height*0.2140857,size.width*0.2064583,size.height*0.2316857);
-    path42.cubicTo(size.width*0.2456583,size.height*0.2104286,size.width*0.2479667,size.height*0.2606429,size.width*0.2383583,size.height*0.2792429);
-    path42.cubicTo(size.width*0.2499833,size.height*0.3094571,size.width*0.2338417,size.height*0.3349143,size.width*0.2170750,size.height*0.3257714);
-    path42.cubicTo(size.width*0.2233333,size.height*0.3484286,size.width*0.1678583,size.height*0.3667143,size.width*0.1714167,size.height*0.3235286);
-    path42.cubicTo(size.width*0.1658417,size.height*0.3121714,size.width*0.1374083,size.height*0.3257286,size.width*0.1475333,size.height*0.2747429);
-    path42.close();
+    Path cloudOne = Path();
+    cloudOne.moveTo(size.width*0.1475333,size.height*0.2747429);
+    cloudOne.quadraticBezierTo(size.width*0.1394333,size.height*0.2087714,size.width*0.1833250,size.height*0.2372571);
+    cloudOne.quadraticBezierTo(size.width*0.1956250,size.height*0.2140857,size.width*0.2064583,size.height*0.2316857);
+    cloudOne.cubicTo(size.width*0.2456583,size.height*0.2104286,size.width*0.2479667,size.height*0.2606429,size.width*0.2383583,size.height*0.2792429);
+    cloudOne.cubicTo(size.width*0.2499833,size.height*0.3094571,size.width*0.2338417,size.height*0.3349143,size.width*0.2170750,size.height*0.3257714);
+    cloudOne.cubicTo(size.width*0.2233333,size.height*0.3484286,size.width*0.1678583,size.height*0.3667143,size.width*0.1714167,size.height*0.3235286);
+    cloudOne.cubicTo(size.width*0.1658417,size.height*0.3121714,size.width*0.1374083,size.height*0.3257286,size.width*0.1475333,size.height*0.2747429);
+    cloudOne.close();
 
-    canvas.drawPath(path42, paintBrush);
+    canvas.drawPath(cloudOne, paintBrush);
 
 
     paintBrush = Paint()
@@ -746,17 +746,17 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path43 = Path();
-    path43.moveTo(size.width*0.1475333,size.height*0.2747429);
-    path43.quadraticBezierTo(size.width*0.1394333,size.height*0.2087714,size.width*0.1833250,size.height*0.2372571);
-    path43.quadraticBezierTo(size.width*0.1956250,size.height*0.2140857,size.width*0.2064583,size.height*0.2316857);
-    path43.cubicTo(size.width*0.2456583,size.height*0.2104286,size.width*0.2479667,size.height*0.2606429,size.width*0.2383583,size.height*0.2792429);
-    path43.cubicTo(size.width*0.2499833,size.height*0.3094571,size.width*0.2338417,size.height*0.3349143,size.width*0.2170750,size.height*0.3257714);
-    path43.cubicTo(size.width*0.2233333,size.height*0.3484286,size.width*0.1678583,size.height*0.3667143,size.width*0.1714167,size.height*0.3235286);
-    path43.cubicTo(size.width*0.1658417,size.height*0.3121714,size.width*0.1374083,size.height*0.3257286,size.width*0.1475333,size.height*0.2747429);
-    path43.close();
+    Path cloudOneBorder = Path();
+    cloudOneBorder.moveTo(size.width*0.1475333,size.height*0.2747429);
+    cloudOneBorder.quadraticBezierTo(size.width*0.1394333,size.height*0.2087714,size.width*0.1833250,size.height*0.2372571);
+    cloudOneBorder.quadraticBezierTo(size.width*0.1956250,size.height*0.2140857,size.width*0.2064583,size.height*0.2316857);
+    cloudOneBorder.cubicTo(size.width*0.2456583,size.height*0.2104286,size.width*0.2479667,size.height*0.2606429,size.width*0.2383583,size.height*0.2792429);
+    cloudOneBorder.cubicTo(size.width*0.2499833,size.height*0.3094571,size.width*0.2338417,size.height*0.3349143,size.width*0.2170750,size.height*0.3257714);
+    cloudOneBorder.cubicTo(size.width*0.2233333,size.height*0.3484286,size.width*0.1678583,size.height*0.3667143,size.width*0.1714167,size.height*0.3235286);
+    cloudOneBorder.cubicTo(size.width*0.1658417,size.height*0.3121714,size.width*0.1374083,size.height*0.3257286,size.width*0.1475333,size.height*0.2747429);
+    cloudOneBorder.close();
 
-    canvas.drawPath(path43, paintBrush);
+    canvas.drawPath(cloudOneBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -765,17 +765,17 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path44 = Path();
-    path44.moveTo(size.width*0.8245667,size.height*0.1261857);
-    path44.quadraticBezierTo(size.width*0.8248083,size.height*0.0878714,size.width*0.8558250,size.height*0.1017714);
-    path44.quadraticBezierTo(size.width*0.8643500,size.height*0.0873143,size.width*0.8716750,size.height*0.0989714);
-    path44.cubicTo(size.width*0.8964500,size.height*0.0851286,size.width*0.8978917,size.height*0.1164714,size.width*0.8918500,size.height*0.1275857);
-    path44.cubicTo(size.width*0.8990917,size.height*0.1492143,size.width*0.8888667,size.height*0.1646714,size.width*0.8784000,size.height*0.1584000);
-    path44.cubicTo(size.width*0.8825417,size.height*0.1726714,size.width*0.8474167,size.height*0.1843000,size.width*0.8486000,size.height*0.1568857);
-    path44.cubicTo(size.width*0.8458917,size.height*0.1505714,size.width*0.8200833,size.height*0.1627000,size.width*0.8245667,size.height*0.1261857);
-    path44.close();
+    Path cloudTwo = Path();
+    cloudTwo.moveTo(size.width*0.8245667,size.height*0.1261857);
+    cloudTwo.quadraticBezierTo(size.width*0.8248083,size.height*0.0878714,size.width*0.8558250,size.height*0.1017714);
+    cloudTwo.quadraticBezierTo(size.width*0.8643500,size.height*0.0873143,size.width*0.8716750,size.height*0.0989714);
+    cloudTwo.cubicTo(size.width*0.8964500,size.height*0.0851286,size.width*0.8978917,size.height*0.1164714,size.width*0.8918500,size.height*0.1275857);
+    cloudTwo.cubicTo(size.width*0.8990917,size.height*0.1492143,size.width*0.8888667,size.height*0.1646714,size.width*0.8784000,size.height*0.1584000);
+    cloudTwo.cubicTo(size.width*0.8825417,size.height*0.1726714,size.width*0.8474167,size.height*0.1843000,size.width*0.8486000,size.height*0.1568857);
+    cloudTwo.cubicTo(size.width*0.8458917,size.height*0.1505714,size.width*0.8200833,size.height*0.1627000,size.width*0.8245667,size.height*0.1261857);
+    cloudTwo.close();
 
-    canvas.drawPath(path44, paintBrush);
+    canvas.drawPath(cloudTwo, paintBrush);
 
 
     paintBrush = Paint()
@@ -784,17 +784,17 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path45 = Path();
-    path45.moveTo(size.width*0.8245667,size.height*0.1261857);
-    path45.quadraticBezierTo(size.width*0.8248083,size.height*0.0878714,size.width*0.8558250,size.height*0.1017714);
-    path45.quadraticBezierTo(size.width*0.8643500,size.height*0.0873143,size.width*0.8716750,size.height*0.0989714);
-    path45.cubicTo(size.width*0.8964500,size.height*0.0851286,size.width*0.8978917,size.height*0.1164714,size.width*0.8918500,size.height*0.1275857);
-    path45.cubicTo(size.width*0.8990917,size.height*0.1492143,size.width*0.8888667,size.height*0.1646714,size.width*0.8784000,size.height*0.1584000);
-    path45.cubicTo(size.width*0.8825417,size.height*0.1726714,size.width*0.8474167,size.height*0.1843000,size.width*0.8486000,size.height*0.1568857);
-    path45.cubicTo(size.width*0.8458917,size.height*0.1505714,size.width*0.8200833,size.height*0.1627000,size.width*0.8245667,size.height*0.1261857);
-    path45.close();
+    Path cloudTwoBorder = Path();
+    cloudTwoBorder.moveTo(size.width*0.8245667,size.height*0.1261857);
+    cloudTwoBorder.quadraticBezierTo(size.width*0.8248083,size.height*0.0878714,size.width*0.8558250,size.height*0.1017714);
+    cloudTwoBorder.quadraticBezierTo(size.width*0.8643500,size.height*0.0873143,size.width*0.8716750,size.height*0.0989714);
+    cloudTwoBorder.cubicTo(size.width*0.8964500,size.height*0.0851286,size.width*0.8978917,size.height*0.1164714,size.width*0.8918500,size.height*0.1275857);
+    cloudTwoBorder.cubicTo(size.width*0.8990917,size.height*0.1492143,size.width*0.8888667,size.height*0.1646714,size.width*0.8784000,size.height*0.1584000);
+    cloudTwoBorder.cubicTo(size.width*0.8825417,size.height*0.1726714,size.width*0.8474167,size.height*0.1843000,size.width*0.8486000,size.height*0.1568857);
+    cloudTwoBorder.cubicTo(size.width*0.8458917,size.height*0.1505714,size.width*0.8200833,size.height*0.1627000,size.width*0.8245667,size.height*0.1261857);
+    cloudTwoBorder.close();
 
-    canvas.drawPath(path45, paintBrush);
+    canvas.drawPath(cloudTwoBorder, paintBrush);
 
 
     paintBrush = Paint()
@@ -803,14 +803,14 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path46 = Path();
-    path46.moveTo(size.width*0.0016667,size.height*0.0700000);
-    path46.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
-    path46.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
-    path46.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
-    path46.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
+    Path cloudThree = Path();
+    cloudThree.moveTo(size.width*0.0016667,size.height*0.0700000);
+    cloudThree.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
+    cloudThree.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
+    cloudThree.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
+    cloudThree.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
 
-    canvas.drawPath(path46, paintBrush);
+    canvas.drawPath(cloudThree, paintBrush);
 
 
     paintBrush = Paint()
@@ -819,14 +819,14 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path path47 = Path();
-    path47.moveTo(size.width*0.0016667,size.height*0.0700000);
-    path47.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
-    path47.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
-    path47.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
-    path47.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
+    Path cloudThreeBorder = Path();
+    cloudThreeBorder.moveTo(size.width*0.0016667,size.height*0.0700000);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
 
-    canvas.drawPath(path47, paintBrush);
+    canvas.drawPath(cloudThreeBorder, paintBrush);
 
   }
 
