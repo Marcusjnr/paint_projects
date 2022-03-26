@@ -10,7 +10,7 @@ This flutter project consists of different little Flutter paintings done with cu
 
 
 ## 📸 ScreenShots
-|<img src="ss/bird.png" width="400">
+|<img src="ss/bird.png" width="400">|
 <img src="ss/ship_sea.png" width="400">
 
 
