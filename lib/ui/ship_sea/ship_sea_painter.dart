@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 
 class ShipSeaPainter extends CustomPainter{
 
+  double? seaPosition;
+
+
+  ShipSeaPainter(this.seaPosition);
+
   @override
   void paint(Canvas canvas, Size size) {
     Paint paintBrush;
@@ -101,16 +106,16 @@ class ShipSeaPainter extends CustomPainter{
 
 
     Path thirdWaterWavePath = Path();
-    thirdWaterWavePath.moveTo(size.width*-0.0024750,size.height*0.7581714);
-    thirdWaterWavePath.quadraticBezierTo(size.width*0.1262917,size.height*0.7398143,size.width*0.2705250,size.height*0.7581857);
-    thirdWaterWavePath.cubicTo(size.width*0.3142917,size.height*0.6917143,size.width*0.4134250,size.height*0.7061571,size.width*0.4343583,size.height*0.7050143);
-    thirdWaterWavePath.cubicTo(size.width*0.5265417,size.height*0.7554714,size.width*0.5318833,size.height*0.7348286,size.width*0.5735833,size.height*0.7350000);
-    thirdWaterWavePath.cubicTo(size.width*0.6150417,size.height*0.7355000,size.width*0.7070250,size.height*0.6934571,size.width*0.7484833,size.height*0.6939571);
-    thirdWaterWavePath.cubicTo(size.width*0.7796917,size.height*0.6941714,size.width*0.8403333,size.height*0.7465000,size.width*0.8715417,size.height*0.7467143);
-    thirdWaterWavePath.cubicTo(size.width*0.9028333,size.height*0.7449286,size.width*0.9654000,size.height*0.7413714,size.width*0.9966917,size.height*0.7396000);
-    thirdWaterWavePath.quadraticBezierTo(size.width*0.9966917,size.height*0.7642429,size.width*0.9974083,size.height*0.9587286);
-    thirdWaterWavePath.lineTo(size.width*-0.0002917,size.height*0.9734143);
-    thirdWaterWavePath.lineTo(size.width*-0.0024750,size.height*0.7581714);
+    thirdWaterWavePath.moveTo(size.width*-0.002,size.height*0.75);
+    thirdWaterWavePath.quadraticBezierTo(size.width*0.12,size.height*0.73,size.width*0.27,size.height*0.75);
+    thirdWaterWavePath.cubicTo(size.width*0.31,size.height*0.69,size.width*0.41, size.height*0.70,size.width*0.43,size.height*0.70);
+    thirdWaterWavePath.cubicTo(size.width*0.52,size.height*0.75,size.width*0.53,size.height*0.73,size.width*0.57,size.height*0.73);
+    thirdWaterWavePath.cubicTo(size.width*0.61,size.height*0.73,size.width*0.70,size.height*0.69,size.width*0.74,size.height*0.69);
+    thirdWaterWavePath.cubicTo(size.width*0.77,size.height*0.69,size.width*0.84,size.height*0.74,size.width*0.87,size.height*0.74);
+    thirdWaterWavePath.cubicTo(size.width*0.90,size.height*0.74,size.width*0.96,size.height*0.74,size.width*0.99,size.height*0.73);
+    thirdWaterWavePath.quadraticBezierTo(size.width*0.99,size.height*0.76,size.width*0.99,size.height*0.95);
+    thirdWaterWavePath.lineTo(size.width*-0.00,size.height*0.97);
+    thirdWaterWavePath.lineTo(size.width*-0.00,size.height*0.75);
     thirdWaterWavePath.close();
 
     canvas.drawPath(thirdWaterWavePath, paintBrush);
@@ -193,15 +198,15 @@ class ShipSeaPainter extends CustomPainter{
 
 
     Path firstWaterWavePath = Path();
-    firstWaterWavePath.moveTo(size.width*0.0008333,size.height*0.7842857);
-    firstWaterWavePath.quadraticBezierTo(size.width*0.0718750,size.height*0.7492143,size.width*0.1682083,size.height*0.7888000);
-    firstWaterWavePath.cubicTo(size.width*0.2964917,size.height*0.8709143,size.width*0.3451583,size.height*0.7868429,size.width*0.4156000,size.height*0.7875714);
-    firstWaterWavePath.cubicTo(size.width*0.5340917,size.height*0.9043000,size.width*0.5836083,size.height*0.8004857,size.width*0.6692917,size.height*0.8002571);
-    firstWaterWavePath.cubicTo(size.width*0.7007500,size.height*0.7995429,size.width*0.8029833,size.height*0.8573571,size.width*0.8344417,size.height*0.8566429);
-    firstWaterWavePath.cubicTo(size.width*0.8656917,size.height*0.8570000,size.width*0.9327500,size.height*0.7709143,size.width,size.height*0.7842857);
+    firstWaterWavePath.moveTo(size.width*0.00,size.height*0.78);
+    firstWaterWavePath.quadraticBezierTo(size.width*0.07,size.height*0.74,size.width*0.16,size.height*0.78);
+    firstWaterWavePath.cubicTo(size.width*0.29,size.height*0.87,size.width*0.34,size.height*0.78,size.width*0.41,size.height*0.78);
+    firstWaterWavePath.cubicTo(size.width*0.53,size.height*0.90,size.width*0.58,size.height*0.80,size.width*0.66,size.height*0.80);
+    firstWaterWavePath.cubicTo(size.width*0.70,size.height*0.79,size.width*0.80,size.height*0.85,size.width*0.83,size.height*0.85);
+    firstWaterWavePath.cubicTo(size.width*0.86,size.height*0.85,size.width*0.93,size.height*0.77,size.width,size.height*0.78);
     firstWaterWavePath.quadraticBezierTo(size.width*0.9981250,size.height*0.8371429,size.width*0.9991667,size.height*0.9985714);
     firstWaterWavePath.lineTo(size.width*0.0008333,size.height*0.9985714);
-    firstWaterWavePath.lineTo(size.width*0.0008333,size.height*0.7842857);
+    firstWaterWavePath.lineTo(size.width*0.00,size.height*0.78);
     firstWaterWavePath.close();
 
     canvas.drawPath(firstWaterWavePath, paintBrush);
@@ -213,14 +218,14 @@ class ShipSeaPainter extends CustomPainter{
       ..strokeWidth = 1;
 
 
-    Path backCloudPath0 = Path();
-    backCloudPath0.moveTo(size.width*0.5751417,size.height*0.7681429);
-    backCloudPath0.quadraticBezierTo(size.width*0.6083167,size.height*0.7827000,size.width*0.6333333,size.height*0.7842857);
-    backCloudPath0.lineTo(size.width*0.6025000,size.height*0.7957143);
-    backCloudPath0.quadraticBezierTo(size.width*0.5979521,size.height*0.7895357,size.width*0.5751417,size.height*0.7681429);
-    backCloudPath0.close();
+    Path boatRedStripe = Path();
+    boatRedStripe.moveTo(size.width*0.5751417,size.height*0.7681429);
+    boatRedStripe.quadraticBezierTo(size.width*0.6083167,size.height*0.7827000,size.width*0.6333333,size.height*0.7842857);
+    boatRedStripe.lineTo(size.width*0.6025000,size.height*0.7957143);
+    boatRedStripe.quadraticBezierTo(size.width*0.5979521,size.height*0.7895357,size.width*0.5751417,size.height*0.7681429);
+    boatRedStripe.close();
 
-    canvas.drawPath(backCloudPath0, paintBrush);
+    canvas.drawPath(boatRedStripe, paintBrush);
 
 
     paintBrush = Paint()
@@ -804,11 +809,11 @@ class ShipSeaPainter extends CustomPainter{
 
 
     Path cloudThree = Path();
-    cloudThree.moveTo(size.width*0.0016667,size.height*0.0700000);
-    cloudThree.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
-    cloudThree.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
-    cloudThree.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
-    cloudThree.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
+    cloudThree.moveTo(size.width*0.00,size.height*0.07);
+    cloudThree.quadraticBezierTo(size.width*0.03,size.height*0.06,size.width*0.04,size.height*0.07);
+    cloudThree.quadraticBezierTo(size.width*0.08,size.height*0.06,size.width*0.06,size.height*0.11);
+    cloudThree.quadraticBezierTo(size.width*0.07,size.height*0.17,size.width*0.042,size.height*0.16);
+    cloudThree.quadraticBezierTo(size.width*0.02,size.height*0.16,size.width*0.00,size.height*0.16);
 
     canvas.drawPath(cloudThree, paintBrush);
 
@@ -820,11 +825,11 @@ class ShipSeaPainter extends CustomPainter{
 
 
     Path cloudThreeBorder = Path();
-    cloudThreeBorder.moveTo(size.width*0.0016667,size.height*0.0700000);
-    cloudThreeBorder.quadraticBezierTo(size.width*0.0325583,size.height*0.0655286,size.width*0.0483333,size.height*0.0714286);
-    cloudThreeBorder.quadraticBezierTo(size.width*0.0831333,size.height*0.0674714,size.width*0.0605750,size.height*0.1170000);
-    cloudThreeBorder.quadraticBezierTo(size.width*0.0709583,size.height*0.1706000,size.width*0.0425000,size.height*0.1628571);
-    cloudThreeBorder.quadraticBezierTo(size.width*0.0248083,size.height*0.1679571,size.width*0.0015000,size.height*0.1643714);
+    cloudThreeBorder.moveTo(size.width*0.00,size.height*0.07);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.03,size.height*0.06,size.width*0.04,size.height*0.07);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.08,size.height*0.06,size.width*0.06,size.height*0.11);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.07,size.height*0.17,size.width*0.042,size.height*0.16);
+    cloudThreeBorder.quadraticBezierTo(size.width*0.02,size.height*0.16,size.width*0.00,size.height*0.16);
 
     canvas.drawPath(cloudThreeBorder, paintBrush);
 
@@ -832,7 +837,7 @@ class ShipSeaPainter extends CustomPainter{
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
+    return false;
   }
 
 }
