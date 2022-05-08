@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterpaintprojects/ui/draw_bird/draw_bird.dart';
+import 'package:flutterpaintprojects/ui/night_city/night_city.dart';
 import 'package:flutterpaintprojects/ui/ship_sea/ship_sea.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DrawShipSea(),
+      home: const NightCity(),
     );
   }
 }

@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 class DrawBirdPainter extends CustomPainter{
 
+  double position;
+
+  DrawBirdPainter(this.position);
+
   @override
   void paint(Canvas canvas, Size size) {
     Paint paintBrush;
@@ -20,7 +24,7 @@ class DrawBirdPainter extends CustomPainter{
     birdBodyPath.cubicTo(size.width*0.2080128,size.height*0.4758728,size.width*0.2518205,size.height*0.3718639,size.width*0.3567324,size.height*0.3712060);
     birdBodyPath.close();
 
-    canvas.drawPath( birdBodyPath, paintBrush);
+    canvas.drawPath(birdBodyPath, paintBrush);
 
 
     paintBrush = Paint()
@@ -83,6 +87,7 @@ class DrawBirdPainter extends CustomPainter{
     birdLeftLegPath.lineTo(size.width*0.3205128,size.height*0.8136095);
     birdLeftLegPath.lineTo(size.width*0.3461538,size.height*0.8136095);
     birdLeftLegPath.lineTo(size.width*0.3461538,size.height*0.7130178);
+    birdLeftLegPath.close();
 
     canvas.drawPath(birdLeftLegPath, paintBrush);
 
