@@ -38,7 +38,7 @@ class _NightCityState extends State<NightCity> {
 
             CustomPaint(
               size: Size(
-                  MediaQuery.of(context).size.width,(
+                  MediaQuery.of(context).size.width * 0.9,(
                   MediaQuery.of(context).size.width).toDouble()),
               painter: NightCityPainter(),
             ),
