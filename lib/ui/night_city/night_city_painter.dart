@@ -21,7 +21,7 @@ class NightCityPainter extends CustomPainter{
     path0.lineTo(0,0);
     path0.close();
 
-    canvas.drawPath(path0, paint0);
+   // canvas.drawPath(path0, paint0);
 
 
     Paint paint1 = Paint()
