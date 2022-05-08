@@ -42,9 +42,6 @@ class _NightCityState extends State<NightCity> {
                   MediaQuery.of(context).size.width).toDouble()),
               painter: NightCityPainter(),
             ),
-
-
-
           ],
         ),
       ),
